@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+
+.about-section {
+  background: url('../img/about-us-team.png') no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 45px 0;
+  height: 80vh;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 23px;
+  color: #9b9b9b;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.infoMember .infoHeading {
+  text-align: center;
+  padding: 1rem;
+  font-size: 34px;
+  color: rgb(41, 40, 40);
+}
+
+.infoMember p {
+  display: flex;
+  padding: 23px 19rem;
+  color: #9b9b9b;
+  font-size: 21px;
+}
+.infoMember .members {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 23px 23px; */
+  transition: all ease-in-out 0.2s;
+}
+
+.infoMember .members .member {
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  margin-top: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  border-radius: 42px;
+}
+
+.infoMember .members .member img {
+  height: 12rem;
+  width: 13rem;
+  border: 2px solid #ececec;
+  border-radius: 113px;
+}
+
+.infoMember .members .member h3 {
+  font-size: 1rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.infoMember .members .member span {
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--red);
+  border-radius: 5rem;
+}
+
+.fill-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 23px 2px;
+  background-color: #ececec;
+}
+.fill-form h1 {
+  padding-top: 23px;
+  padding-left: 45px;
+  color: rgb(102, 97, 97);
+}
+
+.fill-form p {
+  padding: 23px 23px;
+}
+.fill-form p a {
+  /*padding-top: 23px;*/
+  font-size: 23px;
+  width: 32px;
+  text-decoration: none;
+  color: coral;
+  background-color: cornsilk;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+  .infoMember p {
+    padding: 20px 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
+  .infoMember .member {
+    flex-direction: row;
+  }
+  .infoMember .members {
+    display: grid;
+  }
+  .infoMember p {
+    padding: 20px 4rem;
+  }
+  .fill-form {
+    display: grid;
+  }
+}
